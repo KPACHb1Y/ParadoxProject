@@ -1,0 +1,25 @@
+{
+  "name": "paradoxproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpFile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1",
+    "less": "^3.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KPACHb1Y/ParadoxProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KPACHb1Y/ParadoxProject/issues"
+  },
+  "homepage": "https://github.com/KPACHb1Y/ParadoxProject#readme"
+}
