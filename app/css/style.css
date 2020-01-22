@@ -83,10 +83,20 @@ body .container .main-content .main-content__interval input {
   border-bottom: 1px solid #BFC9E0;
   width: 36px;
 }
-body .container .main-content .main-content__calendar .row {
+body .container .main-content .main-content__calendar .main-content__calendar-block {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+}
+body .container .main-content .main-content__calendar .main-content__calendar-block .main-content__calendar-block__day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .container .main-content .main-content__calendar .main-content__calendar-block .main-content__calendar-block__day p {
+  margin: 0;
+}
+body .container .main-content .main-content__calendar .main-content__calendar-block .main-content__calendar-block__item {
+  display: flex;
+  overflow: hidden;
 }
 body .container .main-content .main-content__calendar .row .time {
   width: 100%;
@@ -95,15 +105,15 @@ body .container .main-content .main-content__calendar .row .time {
 }
 body .container .main-content .main-content__calendar .row .time .time-item {
   display: flex;
-  width: 143px;
+  width: 86px;
   border-right: 1px solid #cccccc;
 }
 body .container .main-content .main-content__calendar .row .time .time-item:nth-child(1) {
-  width: 41px;
-  border: 0;
+  width: 21px;
+  border-right: 1px solid #cccccc;
 }
 body .container .main-content .main-content__calendar .row .time .time-item:nth-child(2) {
-  width: 121px;
+  width: 93px;
 }
 body .container .main-content .main-content__calendar .row .time .time-item span:first-child {
   font-size: 14px;
@@ -121,25 +131,22 @@ body .container .main-content .main-content__calendar .row .line {
   display: flex;
 }
 body .container .main-content .main-content__calendar .row .line .line-item {
-  width: 71px;
+  width: 46px;
   height: 20px;
   border-right: 1px solid #cccccc;
 }
 body .container .main-content .main-content__calendar .row .line .line-item:first-child {
-  width: 41px;
-  border-right: 0;
+  width: 21px;
+  border-right: 1px solid #cccccc;
 }
 body .container .main-content .main-content__calendar .row .line .line-item:nth-child(2) {
-  width: 49px;
+  width: 46px;
 }
 body .container .main-content .main-content__calendar .row .item {
-  width: 70px;
-  height: 70px;
+  width: 46px;
+  height: 46px;
   background: #DFE4EF;
   margin: 1px;
-}
-body .container .main-content .main-content__calendar .row .item:nth-child(2) {
-  width: 50px;
 }
 body .container .main-content .main-content__calendar .row .item.active {
   background: #0066FF;
