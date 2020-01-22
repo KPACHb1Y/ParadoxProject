@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    for (var i = 0; i < 24; i++) {
-        var row = createRow();
-        for (var k = 0; k < 7; k++) {
-            createElement(row);
-        };
-    };
-
-    function createRow() {
-        var parent = document.getElementById('parent');
-        var row = document.createElement('div');
+    const createRow = () => {
+        const parent = document.getElementById('parent');
+        const row = document.createElement('div');
         row.className = "row";
         parent.appendChild(row);
         return row;
-    }
+    };
 
-    function createElement(parent) {
-        var item = document.createElement('div');
+    const createElement = parent => {
+        const item = document.createElement('div');
         item.className = "item";
         parent.appendChild(item);
+    };
+
+    for (let i = 0; i < 24; i++) {
+        const row = createRow();
+        for (let k = 0; k < 7; k++) {
+            createElement(row);
+        }
     }
 
     const items = document.querySelectorAll('.item');
