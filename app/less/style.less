@@ -93,7 +93,8 @@ body {
             flex-direction: column;
             justify-content: space-around;
             p {
-              margin: 0;
+              width: 18px;
+              margin: 0 21px 0 0;
             }
           }
           .main-content__calendar-block__item {
@@ -102,35 +103,35 @@ body {
           }
         }
         .row {
-          //display: flex;
-          //flex-wrap: wrap;
-          //align-items: center;
           .time {
             width: 100%;
-            height: 20px;
+            height: 40px;
             display: flex;
+            margin-left: 40px;
             .time-item {
               display: flex;
-              width: 86px;
-              border-right: 1px solid #cccccc;
-              &:nth-child(1) {
-                width: 21px;
+              width: 8.1%;
+              border-left: 1px solid #cccccc;
+              height: 40px;
+              border-top: none;
+              border-bottom: 0;
+              position: relative;
+              .time-item__border {
+                width: 17px;
+                height: 20px;
                 border-right: 1px solid #cccccc;
-              }
-              &:nth-child(2) {
-                width: 93px;
+                position: absolute;
+                bottom: 0;
+                left: 30%;
               }
               span {
                 &:first-child {
                   font-size: 14px;
                   padding-left: 5px;
                 }
-                &:last-child {
+                &:nth-child(2) {
                   font-size: 10px;
                 }
-              }
-              &:last-child {
-                border: 0;
               }
             }
           }
@@ -138,17 +139,11 @@ body {
             width: 100%;
             height: 20px;
             display: flex;
+            margin-left: 40px;
             .line-item {
-              width: 46px;
+              width: 4%;
               height: 20px;
-              border-right: 1px solid #cccccc;
-              &:first-child {
-                width: 21px;
-                border-right: 1px solid #cccccc;
-              }
-              &:nth-child(2) {
-                width: 46px;
-              }
+              border-left: 1px solid #cccccc;
             }
           }
           .item {
@@ -156,16 +151,9 @@ body {
             height: 46px;
             background: #DFE4EF;
             margin: 1px;
-            //&:nth-child(2) {
-            //  width: 50px;
-            //}
             &.active {
               background: #0066FF;
             }
-          }
-          p {
-            width: 18px;
-            margin: 0 21px 0 0;
           }
         }
       }
